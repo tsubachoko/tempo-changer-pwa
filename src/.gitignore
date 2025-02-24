@@ -7,4 +7,4 @@ node_modules
 
 .wrangler
 
-data/temp/*.sql
+/public/entry.worker.js
