@@ -13,10 +13,7 @@
     "test": "vitest",
     "wrangler:preview": "pnpm build && wrangler pages dev",
     "wrangler:deploy": "pnpm build && wrangler pages deploy",
-    "cf-typegen": "wrangler types",
-    "prisma:format": "prisma format",
-    "prisma:clean": "find node_modules/.pnpm -path '*/node_modules/.prisma' -exec rm -rf {} +",
-    "prisma:generate": "prisma generate"
+    "cf-typegen": "wrangler types"
   },
   "dependencies": {
     "@conform-to/dom": "^1.2.1",
@@ -45,7 +42,6 @@
     "@remix-run/dev": "^2.12.0",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
-    "prisma": "^5.19.1",
     "typescript": "^5.6.2",
     "vite": "^5.4.5",
     "vite-tsconfig-paths": "^4.3.2",
