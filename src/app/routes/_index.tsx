@@ -37,7 +37,15 @@ export default function Index() {
     <Box p="4">
       <Box>
         <input type="file" onChange={audioInput} />
+      </Box>
+
+      <Box mt="6">
+        <audio src={audioSrc} controls ref={player}></audio>
+      </Box>
+
+      <Box mt="6">
         <div>
+          <p>再生速度 ×{tempo / 100}</p>
           <input
             type="range"
             min="50"
@@ -45,9 +53,7 @@ export default function Index() {
             value={tempo}
             onChange={changeTempo}
           />
-          <p>再生速度 ×{tempo / 100}</p>
         </div>
-        <audio src={audioSrc} controls ref={player}></audio>
       </Box>
 
       <Box mt="8">
