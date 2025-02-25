@@ -5,7 +5,6 @@ import {
   Scripts,
   ScrollRestoration,
 } from '@remix-run/react'
-import { ManifestLink } from '@remix-pwa/sw'
 import { Container, Theme } from '@radix-ui/themes'
 import '@radix-ui/themes/styles.css'
 
@@ -17,7 +16,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" type="image/png" />
         <meta name="robots" content="noindex" />
-        <ManifestLink />
+        <link rel="manifest" href="/manifest.webmanifest" />
         <Meta />
         <Links />
       </head>
