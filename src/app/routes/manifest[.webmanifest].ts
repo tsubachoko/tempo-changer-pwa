@@ -10,6 +10,18 @@ export const loader = () => {
       display: 'standalone',
       background_color: '#d3d7dd',
       theme_color: '#c34138',
+      icons: [
+        {
+          src: '/app_icon_512.png',
+          sizes: '192x192',
+          type: 'image/png',
+        },
+        {
+          src: '/app_icon_512.png',
+          sizes: '512x512',
+          type: 'image/png',
+        },
+      ],
     } as WebAppManifest,
     {
       headers: {
