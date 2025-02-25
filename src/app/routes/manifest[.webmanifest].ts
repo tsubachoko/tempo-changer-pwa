@@ -8,8 +8,8 @@ export const loader = () => {
       name: 'テンポ変換プレイヤー',
       start_url: '/',
       display: 'standalone',
-      background_color: '#d3d7dd',
-      theme_color: '#c34138',
+      background_color: '#ffffff',
+      theme_color: '#a346ff',
       icons: [
         {
           src: '/app_icon_512.png',
