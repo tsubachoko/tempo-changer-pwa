@@ -34,7 +34,7 @@ export default function Index() {
   }
 
   return (
-    <Box>
+    <Box p="4">
       <Box>
         <input type="file" onChange={audioInput} />
         <div>
